@@ -1,0 +1,206 @@
+
+#card{
+    background-color: rgba(255, 255, 255, 0.884);
+    width: 300px;
+    height: 220px;
+    border: 0.5px solid black;
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 17%;
+    float: none;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    
+}
+
+#card1 {
+  background-color: rgba(255, 255, 255, 0.884);
+  width: 300px;
+  height: 220px;
+  border: 0.5px solid black;
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-block;
+  overflow: auto;
+  border-radius: 17%;
+  float: none;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.conteiner{
+  display: inline-block;
+}
+
+#collapseExample{
+  position: relative;
+  display: inline-block;
+}
+#coins1{
+  background-color: rgba(255, 255, 255, 0.884);
+  width: 300px;
+  height: 220px;
+  border: 0.5px solid black;
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-block;
+  overflow: auto;
+  border-radius: 17%;
+  float: none;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+#headImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 150px;
+}
+
+#searchBox{
+    position: relative;
+    width: 200px;
+}
+#search-Button{
+    position: relative;
+}
+#searchElement{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;  
+}
+
+#thePickedCoin{
+  position: relative;
+  justify-content: center;
+ 
+}
+h1,h2,h5{
+    text-align: center;
+  
+}
+
+#cardContainer{
+    margin: 80px;
+}
+#delete{
+    position: absolute;
+    right: 0;
+}
+#removeCoin{
+    position: absolute;
+    right: 9px;
+    border-radius: 30%;
+}
+
+#details{
+    margin: auto;
+    width: 18%;
+}
+#myImage{
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+ 
+   .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  #section3{
+    display: table;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    background-color: rgb(12, 91, 117,0.8);
+    border-radius: 10%;
+    
+  }
+  #section3 > p{
+      font-size: large;
+      text-align: center;
+  }
+ 
+  #symbols{
+    display: table;
+    margin: 0 auto;
+  }
+
+  #section2 {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    display: table;
+    position: relative;
+    background-color: rgb(12, 91, 117,0.8);
+    font-size: large;
+    border-radius: 15px;
+  }
+  #section2 >p{
+      text-align: center;
+  }
+
+#closeInfo{
+  width: 100px;
+}
+#cardContainer{
+margin: 10%;
+}
