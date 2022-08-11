@@ -1,4 +1,5 @@
 
+
 /// <reference path="jquery-3.6.0.js" />
 
 
@@ -83,11 +84,11 @@ $(function () {
             $("#cardContainer").append(card)
 
             let marketPriceEur = `${coin.market_data.current_price.eur}`
-            let resolt = marketPriceEur.slice(0, 8)
+            let result = marketPriceEur.slice(0, 8)
             let marketPriceUsd = `${coin.market_data.current_price.usd}`
-            let resolt1 = marketPriceUsd.slice(0, 8)
+            let result1 = marketPriceUsd.slice(0, 8)
             let marketPriceIls = `${coin.market_data.current_price.ils}`
-            let resolt2 = marketPriceIls.slice(0, 8)
+            let result2 = marketPriceIls.slice(0, 8)
 
             $(`#${coin.id}`).click(function () {
              
@@ -99,19 +100,17 @@ $(function () {
                 const info = ` 
                <div class="collapse" id="collapseExample"> 
                 <div id="coins1" class="card card-col">
-                <h3>ILs: ${resolt2}</h3>
-                <h3>Usd: ${resolt1}</h3>
-                <h3>Eur: ${resolt} </h3>
+                <h3>₪: ${result2}</h3>
+                <h3>$: ${result1}</h3>
+                <h3>€: ${result} </h3>
                 <img style="width: 50px; height: 50px;" src="${coin.image.small}"> 
                 <button id="closeInfo" class="btn btn-danger">Close</button>
                 </div>  
                 </div>
                 `
                 $(`#${coin.name}`).append(info)
-                
                 $("#closeInfo").click(() => {
                     $(`#${coin.name}`).empty()
-
                 })
             })
         }
@@ -173,11 +172,15 @@ $(function () {
         });
         if (count > 5) {
             event.target.checked = false
-            alert("you can pick only 5!")
-            console.log(arr);
+            alert("You can't select more than 5 coins")
         }
     });
 })
+
+
+
+
+
 
 
 
